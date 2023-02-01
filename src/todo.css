@@ -1,0 +1,165 @@
+#newtodo {
+    background-color: #fff;
+    border-color: none;
+    border-width: 0px;
+    outline: none;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+#completeAll {
+    position: relative;
+    bottom: 13px;
+    font-size: 22px;
+    color: #fff;
+    padding: 70px 0px 0px 0px;
+    transform: rotate(90deg);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#todoCount{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 12px 16px 12px 16px;
+    background-color:white;
+    color: #000;
+}
+
+#filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+
+}
+
+input[type = 'button']{
+    background-color:yellow;
+    width: 100px;
+}
+
+#deleteCompleted {
+    background-color:rgb(255, 255, 255);
+    width: 130px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 12px 16px 12px 16px;
+    color: #000;
+}
+
+div.todohead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+   list-style-type: none;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    color: black;
+    transition: 0.3s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  ul li.completed {
+    list-style-type: none;
+    text-decoration: line-through;
+  }
+  ul li.completed.hidden {
+    list-style-type: none;
+    text-decoration: line-through;
+    display: hidden;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .select {
+    top: 6px;
+    left: 8px;
+    position: absolute;
+    background-color: darksalmon;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+    padding-top: 3px;
+  }
+  span.select.checked::before {
+    content: '✔️';
+  }
+  
+  .header {
+    background-color: #f44336;
+    padding: 40px 40px;
+    color: white;
+    text-align: center;
+    width: 700px;
+    
+    position: relative;
+    top: 25%;
+    left:35%;
+  }
+  .header:after {
+    display: table;
+    clear: both;
+  }
+  .footer {
+    background-color: #6936f4;
+    padding: 40px 40px;
+    color: white;
+    text-align: center;
+    width: 700px;
+    position: relative;
+    top: 25%;
+    left:35%;
+    display: none;
+  }
+  .footer::after{
+    display: table;
+    clear: both;
+  }

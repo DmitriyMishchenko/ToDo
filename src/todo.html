@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="todo.css">
+    <title>SimpleToDo</title>
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <div class = "todohead">
+            <span id = "completeAll">❯</span>
+            <input id = "newtodo" placeholder="Write here your plans">
+        </div>
+        <ul id="myUL">
+        </ul>
+    </div>
+    <div id = "myFOOTER" class="footer">   
+        <span id = "todoCount"></span>
+        <ul id = "filters">
+            <input type = "button" id = "buttonAll" value = 'All'>
+            <input type = "button" id = "buttonActive" value = 'Active'> 
+            <input type = "button" id = "buttonCompleted" value = "Completed"> 
+        </ul>
+        <input type="button" id = "deleteCompleted" value = "Clear Completed">
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>
